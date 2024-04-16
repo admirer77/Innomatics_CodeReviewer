@@ -1,9 +1,8 @@
 import streamlit as st
-from utils import getReview
 import time
 
 import google.generativeai as genai
-with open(r'C:\Users\dsai9\Projects\Gen AI apps\GEMINI_API_KEY.txt', 'r') as f:
+with open('Gemini_API_Key.txt', 'r') as f:
     api_key = f.read().strip()
 
 genai.configure(api_key=api_key)
